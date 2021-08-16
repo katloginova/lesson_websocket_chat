@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/app.js" defer></script>
+
+</head>
+<body>
+    <form id="messagesForm" class="messages">
+
+        <div class="messages__adder">
+            <input id="inputMessage" type="text" class="message__input">
+            <input id="btnSend" type="submit"  class="message__btn" value="send">
+        </div>
+    </form>
+
+    <script id="messageTemplate" type="text/template">
+        <div class="messages__item">
+            <div class="author">{{author}}:</div>
+            <div class="message">{{text}}</div>
+        </div>
+    </script>
+
+    <script id="loganTemplate" type="text/template">
+        <div class="logan">
+            {{name}}
+        </div>
+    </script>
+</body>
+</html>
