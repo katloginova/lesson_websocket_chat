@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./js/app.js" defer></script>
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <!-- <script src="./js/connection.js" defer></script>
 
+    <script src="./js/app.js" defer></script> -->
 </head>
 <body>
     <form id="messagesForm" class="messages">
 
         <div class="messages__adder">
-            <input id="inputMessage" type="text" class="message__input">
+            <input id="inputName" type="text" class="message__input" placeholder="name">
+            <input id="inputMessage" type="text" class="message__input" placeholder="message">
             <input id="btnSend" type="submit"  class="message__btn" value="send">
         </div>
     </form>
@@ -25,10 +27,5 @@
         </div>
     </script>
 
-    <script id="loganTemplate" type="text/template">
-        <div class="logan">
-            {{name}}
-        </div>
-    </script>
 </body>
 </html>
